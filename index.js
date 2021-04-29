@@ -6,18 +6,15 @@ and inspect the data
 
 // console.log("users: ", users);
 
-const newDatas = [];
+let startMessage = ``;
 
 for (const user of users) {
-  const datas = [user.id, user.name, user.address.city];
-  newDatas.push(datas);
+  startMessage += `User ID: ${user.id} \n Name: ${user.name} \n City: ${user.address.city} \n`;
 }
-
-console.log(newDatas);
-
-alert(newDatas);
+alert(startMessage);
 
 const userId = Number(prompt("What is your user id?"));
+
 let message = `todo \n`;
 
 for (const todo of todos) {
